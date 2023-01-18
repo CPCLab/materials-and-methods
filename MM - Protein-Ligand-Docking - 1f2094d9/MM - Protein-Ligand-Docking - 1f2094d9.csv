@@ -1,0 +1,28 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-07-01,Protein-Ligand Docking,"(_Written by Christoph Gertzen_)
+(_Last update: 2022.08.18_)
+ 
+
+ 
+
+The proteins were aligned on their respective {binding pocket|docking target}.
+
+ 
+The proteins were protonated with {Maestro|Modeling tool} at a pH of {7.4|pH}, with protonation states as determined by {PROPKA|pKa method}.
+ 
+For the molecular docking, ligands {PP, 5BFA, 6MSA, 4HCA, 4HBA, CA|ligand} were drawn and converted into a 3D structure with {Maestro|Modeling tool}.
+ 
+The protonation state of the ligand was determined using {Epik|ligand protonation program}.
+ 
+
+The ligands were made using all possible combinations of stereocenter configurations and docked individually.
+
+ 
+The ligands were placed into the {binding pocket|docking target} using {Maestro|Modeling tool}.
+ 
+ 
+
+ 
+The ligands were subsequently docked into the binding pockets of the respective sensors utilizing a combination of {AutoDock|docking engine} as a docking engine and the {DrugScore2018|docking potentials} distance-dependent pair-potentials as an objective function. The pair potentials were generated for at least {8.0 Å|map size} in each direction around the {largest ligand|map center}.
+During docking, default parameters were used, except for the clustering RMSD cutoff, which was set to {2.0 Å|clustering RMSD cutoff}.
+Binding modes were considered valid if they were located in the {binding pocket|docking target} and contained in the {largest cluster|success criterion}, which comprised at least {20%|valid cluster criterion} of all docking poses.",MM,,0,,

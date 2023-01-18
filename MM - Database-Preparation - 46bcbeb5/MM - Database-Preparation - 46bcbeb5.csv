@@ -1,0 +1,10 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-07-07,Database Preparation,"(Written by Jesko Kaiser_)
+(_Last update: 2022.08.18_)
+ 
+
+
+The {Lead Like Now|:subset:} of the {ZINC20|:database:}, containing {3.500.000|number of compounds} compounds was downloaded as {SMILES strings|format}. For each compound {200|number of conformers} were generated using using {Open Eye OMEGA2|software} with {default|:settings:}.
+ 
+
+The {Lead Like Now|:subset:} of the {ZINC20|:database:}, containing {3.500.000|number of compounds} compounds was downloaded as {db2.gzformat|file format}.",MM,,0,,

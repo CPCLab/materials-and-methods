@@ -1,0 +1,23 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-08-18,Constraint Network Analysis - Allostery,"(_ Written by Christopher Pfleger_)
+(_Last update: 2022.08.30_)
+ 
+ 
+{Rigidity analyses|operation} were performed using the {CNA|:software package:} {3.0|version} (10.1021/ci400044m). We applied CNA on ensembles of {network topologies generated from conformational ensembles provided as input|applied topologies}. Ensembles of {2000|number of frames} conformations were generated from {MD|ensemble generation program} simulation. {Average stability characteristics|calculated measure} were calculated by {constraint counting on each topology in the ensemble|calculation method}.
+The {FIRST|:software:} {6.2|version} (10.1002/prot.1081) was used to construct each network of covalent and non-covalent (hydrophobic tethers, hydrogen bonds, and salt bridges) constraints. The hydrogen bond energy EHB is determined from an {empirical energy function|hydrogen bond energy calculation method}. (10.1002/pro.5560060622) Hydrophobic tethers between carbon and sulfur atoms were considered if the distance between these atoms was less than the sum of their van der Waals radii (C: 1.7 Å, S: 1.8 Å) plus  {0.25 Å | minimum distance between two vdW radii of carbon and/or sulfur atoms for placing a hydrophobic tether} (Dcut). (10.1073/pnas.062492699)
+Biomolecules generally display a hierarchy of structural stability, reflecting the modularity of their structure. (10.1002/elsc.200800043) To identify this hierarchy, a {constraint dilution trajectory|network states analysis} of network states {σ} is analyzed by {successively removing non-covalent constraints|analysis method} from an initial network topology. (10.1073/pnas.062492699)(10.1002/elsc.200800043) (10.1088/1478-3975/7/1/016002) (10.1002/prot.22946) (10.1016/S1093-3263(02)00146-8) Here, {hydrogen bond constraints (including salt bridges)|removal target} are removed by their increasing strength. That way, for network state σ, only {hydrogen bonds|retained bonds} are retained that have an energy { EHB lte Ecut(σ)|retaining criteria}. Hydrogen bonds constraints were removed in the range of {-0.1 kcal mol-1|Estart} to {-6.0 kcal mol-1| Estop} with a step size of {0.1 kcal mol-1|Estep}.
+ 
+
+We used a {per-residue decomposition|:scheme:} for {the extent of single residues contribution to the allosteric signaling |:identification:}. First, {neighbor stability maps (rcij,neighbor) |derived value} are derived from the {constraint dilution trajectory |derivation method}; they contain information accumulated over all network states σ along the trajectory. (10.1021/acs.jctc.7b00529) (10.1002/jcc.23122)
+More precisely, stability maps monitor the persistence of rigid contacts for pairs of residues during a bond dilution process; a rigid contact is present as long as two residues belong to the same rigid cluster c of the set of rigid clusters CEcut. As our focus is on short-range rigid contacts, only pairs of heavy atoms of the residue pair R{i, j}, A{kÎi, lÎj}, separated by a distance d ≤ {4.5 Å | distance cutoff for identifying native contacts} are considered. The resulting neighbor stability map (Eq. 1) ( 10.1021/acs.jctc.7b00529) relates to the local stability in the network.
+ 
+$rc_{ij,neighbor} = min(E_{cut}|\exists c\in C^{E_{cut}}:(R_{i}\wedge R_{j}\in c)\wedge(d(A_{\left\{ \exists k\in i,\exists l\in j \right\}})\le 4.5 Å))$ - Eq. 1
+ 
+A chemical potential energy Ei,CNA of residue i is obtained by summation over all n short-range rigid contacts in which the residue is involved (Eq. 2).
+$E_{i.CNA} = \frac{1}{2}\sum_{i\neq j}^{n}rc_{ij,neighbor}$ - Eq. 2
+ 
+which is then used in a linear response approximation to obtain the per-residue decomposition (Eq. 3).
+ 
+$\Delta G_{i,CNA} = \alpha\left( \left\langle \mathrm{E}_{i,CNA}^{perturbed} \right\rangle - \left\langle \mathrm{E}_{i,CNA}^{ground} \right\rangle \right)$ - Eq. 3†
+with α being 0.5. (10.1021/acs.jctc.7b00529).
+ ",MM,,0,,

@@ -1,0 +1,21 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-08-17,Top Suite,"(_Written by Daniel Mulnaes_)
+(_Last update: 2022.08.18_)
+ 
+
+The target sequence was submitted to the TopDomain server. The top five templates identified by TopDomain were {3N25_A, 4YJ5_A, 3GR4_A, 1A49_A, 6DU6_B|:template_pdbs:} with sequence identities of {99%, 93%, 93%, 100%, 63%|template_identities}, coverages of {95%, 97%, 97%, 97%, 96%|template_coverages}, and predicted TM-Score of {0.96, 0.96, 0.96, 0.96, 0.93 | :template_confidences:}, respectively. TopDomain predicted {5|topdomain_boundary_number} boundary locations at positions {38, 115, 217, 324, 389|(_comment, also only integers_) topdomain_positions} with peak boundary confidence scores of {0.83, 0.94, 0.91, 0.71, 0.95|topdomain_confidences} respectively. TopDomainSeq predicted {4|topdomain_seq_boundary_number} boundary locations at positions {39, 115, 215, 388|(_comment, also only integers_) topdomain_seq_positions} with peak boundary confidence scores of {0.65, 0.76, 0.73, 0.73|topdomain_seq_confidences} respectively.
+ 
+
+The target sequence was submitted to the TopProperty server. TopProperty predicted {10|(_comment: this can only be integer_) tm_segments} trans-membrane segments and indicated that the fold is a {transmembrane helix bundle| (_comment: This can only be 4 values: “transmembrane helix bundle, transmembrane beta barrel, transmembrane anchored protein and globular protein_) tm_protein_class}.
+ 
+
+Structure prediction was performed with {TopModel|(_comment: only 3 options: TopModel, AlphaFold2, AlphaFoldMultimer_) modelling_method}. The model quality of the predicted structure was estimated by {AlphaFold2, TopScore|mqap_method} with a final {pTM,TopScore|mqap_score} score of {0.7|mqap_value}. Residue-wise model quality showed that the majority of the protein was nicely predicted, but that residue regions {1-35,150-161|disorder_regions} are likely disordered and has a low model confidence.
+< if|method|e|TopModel> 
+The top five templates identified by TopModel were {3N25_A, 4YJ5_A, 3GR4_A, 1A49_A, 6DU6_B| template_pdbs} with identities of {99%, 93%, 93%, 100%, (:and:) 63%|template_identities}, coverages of { 95%, 97%, 97%, 97%, 96%|template_coverages}, and predicted TM-Score of {0.96, 0.96, 0.96, 0.96, 0.93|template_confidences} , respectively.
+ 
+
+Protein complex prediction was performed with {HADDOCK|(_comment: only 3 options: HADDOCK, TopInterface and AlphaFoldMultimer_) complex_method}.
+< if|method|e|HADDOCK> 
+For HADDOCK, {TopInterface|(_comment: 4 different options: TopInterface, Experimental, Manual, Random_) docking_restraints} docking restraints were used to guide HADDOCK to the right docking solution. The lowest energy decoy from the largest cluster was selected as the final docking solution.s
+< if|method|e|AlphaFoldMultimer> The final complex prediction showed a predicted TM-Score of {0.9|complex_score}.
+ ",MM,,0,,

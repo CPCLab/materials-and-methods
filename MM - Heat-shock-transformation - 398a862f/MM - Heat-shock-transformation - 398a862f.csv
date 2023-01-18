@@ -1,0 +1,8 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-08-17,Heat shock transformation,"(_Written by Stefanie Brands_)
+(_Last update: 2022.08.18_)
+ 
+
+{20.04.2022|Date of experiment}
+A tube of {100|μL|competent DH5α|cell suspension} cells was thawed on ice for {10|min|incubation on ice}. {2|µl|vector DNA|volume} containing {175|ng|(:of:) plasmid|DNA} were added to the cell mixture. The tube was {flick(:ed:)|process} carefully 4-5 times to mix cells and DNA. The mixture was placed on ice for {30|min|incubation on ice}. A heat shock was applied at exactly {42 °C for 45 seconds|heat shock}. The transformed cells were placed on ice for {2|min|incubation on ice}. The cell suspension was filled up {to 1 mL|with room temperature SOC media|recovery media}. The tube was shaken vigorously at {37 °C for 45 min|recovery incubation}. {100|µl|plated cell suspension} of each dilution and the {remaining (:pelleted:) cells|plated cell pellet} were spread onto an {LB-Kan|:selection plate:} and incubated {overnight at 37 °C|incubation}.
+The transformation resulted in the formation of {more than 300|CFU|colony number}. {3|random clones|number of candidate clones} were transferred from the transformation plate to a {5 mL|:overnight preculture:} for minipreps and sequencing.",MM,,0,,

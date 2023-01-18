@@ -1,0 +1,9 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-05-13,Modelling Modeller,"(_Written by Jesko Kaiser_)
+(_Last update: 2022.08.18_)
+ 
+
+The {P2Y10|protein name} sequence was retrieved from {Uniprot|source} and homology models were generated using the {LPA6 receptor|templates} as templates with {5XSZ|:PDB-ID:}. Templates were identified using {BLAST|template identifier} and verified using {PROMALS3D|template verifier}. {Water molecules and crystallization artefacts|removed residues} were removed and {amino acids not resolved in the crystal structures|excluded amino acids} were not included in the models. {50|number of models} models were generated and the final model was selected based on the {DOPE score and visual inspection|selection criteria}. Homology models were protonated using {Protonat3D, as implemented in MOE|protonation software} and the termini were capped using NME and ACE respectively.
+Optional:
+The {protonation state|optimization criteria} of {hisitidines located in the binding pocket|optimized residues} was visually inspected and modified according to favorable interactions with their chemical environment using {MOE|optimization software}.
+ ",MM,,0,,

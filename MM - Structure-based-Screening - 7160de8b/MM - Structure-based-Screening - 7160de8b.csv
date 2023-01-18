@@ -1,0 +1,9 @@
+id,date,title,content,category,elabid,rating,url,metadata
+,2022-05-04,Structure-based Screening,"(_Written by Jesko Kaiser_)
+(_Last update: 2022.08.18_)
+ 
+
+ {yes/no|:homology model usage:}
+The library was subsequently docked in the  homology model of the {human muscle type nAChR|receptor}  {human muscle type nAChR|receptor} (PDB-ID: {7EKT|PDB-ID})  using {DOCK 3.7|software}.
+The binding site was prepared based on the ligand {acetylcholine| name of ligand}. To remove compounds with artificially enhanced scores due to known deficiencies of scoring functions, the top {2000|number of hits} hits were visually inspected based on their {overall docking score|scoring properties}, resulting in {15|number of virtual candidates} virtual candidates.
+ ",MM,,0,,
