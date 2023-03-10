@@ -1,6 +1,0 @@
-id,date,title,content,category,elabid,rating,url,metadata
-,2022-07-01,Template-based Screening,"(_Written by Jesko Kaiser_)
-(_Last update: 2022.08.18_)
- 
-
-The shape query of {suvorexant|ligand} was created using {ROCS|software} with {default settings|query generation settings} and the prepared database was subsequently screened using {default settings|screening settings}. The {best|number of stored hits} conformation for each compound was saved and {10|number of selected compounds} virtual hits were selected based on {their overall score|selection criteria}.",MM,,0,,
